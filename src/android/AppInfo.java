@@ -41,7 +41,7 @@ public class AppInfo extends CordovaPlugin {
             versionName = packageInfo.versionName;
             versionCode = Integer.toString(packageInfo.versionCode);
             
-            installer = packageInfo.getInstallerPackageName(packageName);
+            installer = pm.getInstallerPackageName(packageName);
 
 
         } catch (NameNotFoundException e) {
